@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8" />
     <title>TinDog</title>
 
     <!-- BOOTSTAP CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <!-- BOOTSTRAP JS AND JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 
     <!-- FONTAWESOME -->
-    <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"
+    <script
+      defer
+      src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"
       integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,900;1,700&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    />
   </head>
 
   <body>
@@ -37,10 +53,17 @@
       <!-- Nav Bar -->
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="">Tindog</a>
+          <a class="navbar-brand" href="">tindog</a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -62,14 +85,24 @@
         <div class="row">
           <div class="col-lg-6">
             <h1>Meet new and interesting dogs nearby.</h1>
-            <button type="button" class="btn btn-dark btn-lg">Download</button>
-            <button type="button" class="btn btn-outline-light btn-lg">
+            <button type="button" class="btn btn-dark btn-lg download-button">
+              <i class="fab fa-apple"></i> Download
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg download-button"
+            >
+              <i class="fab fa-google-play"></i>
               Download
             </button>
           </div>
 
-          <div class="col-lag-6">
-            <img src="images/iphone6.png" alt="iphone-mockup" />
+          <div class="col-lg-6">
+            <img
+              class="title-image"
+              src="images/iphone6.png"
+              alt="iphone-mockup"
+            />
           </div>
         </div>
       </div>
@@ -78,14 +111,25 @@
     <!-- Features -->
 
     <section id="features">
-      <h3>Easy to use.</h3>
-      <p>So easy to use, even your dog could do it.</p>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12 feature-box">
+          <i class="fas fa-check-circle fa-4x icon"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
 
-      <h3>Elite Clientele</h3>
-      <p>We have all the dogs, the greatest dogs.</p>
+        <div class="col-lg-4 col-md-12 col-sm-12 feature-box">
+          <i class="fas fa-bullseye fa-4x icon"></i>
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
 
-      <h3>Guaranteed to work.</h3>
-      <p>Find the love of your dog's life or your money back.</p>
+        <div class="col-lg-4 col-md-12 col-sm-12 feature-box">
+          <i class="fas fa-heart fa-4x icon"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->
@@ -155,5 +199,4 @@
       <p>© Copyright 2018 TinDog</p>
     </footer>
   </body>
-
 </html>
